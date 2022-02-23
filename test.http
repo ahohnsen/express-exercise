@@ -2,3 +2,21 @@ GET http://localhost:3333/jokes
 ###
 GET http://localhost:3333/jokes/1
 ###
+
+POST http://localhost:3333/jokes/
+Content-Type: application/json
+
+{
+"joke": "Test joke"
+}
+
+###
+PATCH http://localhost:3333/jokes/0
+Content-Type: application/json
+
+{
+"joke": "This is another test joke"
+}
+
+###
+DELETE http://localhost:3333/jokes/0
