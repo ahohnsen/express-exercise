@@ -8,10 +8,9 @@ const router = express.Router();
  * Exercise 1
  * Create a GET /joke route, that returns all jokes.
  */
-
 router.get('/', async (req, res, next) => {
   try {
-    const jokes = await Joke.find();
+    const jokes = await Joke.find().populate('author', 'name -_id');
     res.json(jokes);
   } catch (error) {
     next(error);

@@ -1,14 +1,14 @@
 GET http://localhost:3333/jokes
 ###
-GET http://localhost:3333/jokes/621772326d56ccf6f22c6462
+GET http://localhost:3333/jokes/6217aebc92f24159e94ec227
 ###
 
 POST http://localhost:3333/jokes/
 Content-Type: application/json
 
 {
-"text": "This is another test joke. haha",
-"author": "Andrea"
+"text": "This is the best joke of John.",
+"author": "6217ae4592f24159e94ec21e"
 }
 
 ###
@@ -21,30 +21,30 @@ Content-Type: application/json
 }
 
 ###
-DELETE http://localhost:3333/jokes/62179f3e0f5164b03cffb2f9
+DELETE http://localhost:3333/jokes/6217aebc92f24159e94ec227
 
 
 ###
 GET http://localhost:3333/people
 ###
-GET http://localhost:3333/people/6217a74956c32908a7da339e
+GET http://localhost:3333/people/6217aa756c9119610ed066bf
 ###
 
 POST http://localhost:3333/people/
 Content-Type: application/json
 
 {
-"name": "Hans Wurst",
-"email": "hanswurst@mail.de"
+"name": "John Doe",
+"email": "john@doe.com"
 }
 
 ###
-PATCH http://localhost:3333/people/6217a74956c32908a7da339e
+PATCH http://localhost:3333/people/6217aa756c9119610ed066bf
 Content-Type: application/json
 
 {
-"name": "Hans Wurst, der Zweite.",
-"email": "hanswurst-2@mail.de"
+"name": "Jane Doe",
+"email": "Jane@doe.com"
 }
 
 
